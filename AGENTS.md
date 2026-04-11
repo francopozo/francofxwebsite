@@ -29,7 +29,7 @@
 ## Architecture notes
 - App shell and SEO live in `app/app.vue`.
 - Main theme and brutalist tokens live in `app/assets/css/main.css` and `app/app.config.ts`.
-- Routes are file-based under `app/pages` (`/`, `/portfolio`, `/about`, `/contact`).
+- Routes are file-based under `app/pages` (`/`, `/portfolio`, `/portfolio/[slug]`, `/about`, `/contact`).
 - Portfolio content source is `app/data/works.ts`.
 
 ## Hosting notes (Banahosting)

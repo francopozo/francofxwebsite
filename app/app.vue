@@ -1,4 +1,6 @@
 <script setup>
+import { site } from '~/data/site'
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -14,7 +16,7 @@ useHead({
   }
 })
 
-const title = 'Franco Pozo | Artist Portfolio'
+const title = `${site.artistName} | Artist Portfolio`
 const description = 'Portfolio personal de artista con enfoque experimental tech brutalista.'
 
 useSeoMeta({
@@ -43,7 +45,7 @@ const nav = [
             to="/"
             class="font-mono text-sm md:text-base tracking-wider uppercase"
           >
-            FRANCO//LAB
+            {{ site.brand }}
           </NuxtLink>
 
           <nav class="flex items-center gap-1 md:gap-2">
@@ -70,9 +72,18 @@ const nav = [
           <p class="text-sm text-muted font-mono">
             EXPERIMENTAL ART PORTFOLIO // {{ new Date().getFullYear() }}
           </p>
-          <p class="text-xs text-muted">
-            Built with Nuxt UI. Ready for static deploy on Banahosting.
-          </p>
+          <div class="flex items-center gap-4 text-xs">
+            <UButton
+              v-for="social in site.socials"
+              :key="social.href"
+              :to="social.href"
+              :label="social.label"
+              target="_blank"
+              color="neutral"
+              variant="link"
+              class="font-mono"
+            />
+          </div>
         </UContainer>
       </footer>
     </div>

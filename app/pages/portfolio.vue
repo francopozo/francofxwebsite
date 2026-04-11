@@ -15,9 +15,10 @@ import { works } from '~/data/works'
       </div>
 
       <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <article
+        <NuxtLink
           v-for="work in works"
           :key="work.slug"
+          :to="`/portfolio/${work.slug}`"
           class="brutal-card bg-[var(--bg-1)] overflow-hidden"
         >
           <img
@@ -54,8 +55,11 @@ import { works } from '~/data/works'
                 #{{ tag }}
               </UBadge>
             </div>
+            <p class="font-mono text-xs text-primary-400">
+              Ver detalle ->
+            </p>
           </div>
-        </article>
+        </NuxtLink>
       </div>
     </UContainer>
   </section>

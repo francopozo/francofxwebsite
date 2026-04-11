@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { site } from '~/data/site'
+
 const form = reactive({
   name: '',
   email: '',
@@ -86,10 +88,17 @@ function onSubmit() {
             Puedes escribirme para comisiones, colaboraciones o exhibiciones.
           </p>
           <ul class="space-y-2 text-zinc-200">
-            <li>Email: contacto@francopozo.art</li>
+            <li>Email: {{ site.contactEmail }}</li>
             <li>Instagram: @francopozo.art</li>
             <li>GitHub: github.com/francopozo</li>
           </ul>
+          <UButton
+            :to="`mailto:${site.contactEmail}`"
+            label="Abrir email"
+            color="neutral"
+            variant="outline"
+            icon="i-lucide-mail"
+          />
         </aside>
       </div>
     </UContainer>

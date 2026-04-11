@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { site } from '~/data/site'
 import { works } from '~/data/works'
 
 const featuredWorks = works.slice(0, 3)
@@ -14,11 +15,10 @@ const featuredWorks = works.slice(0, 3)
               DIGITAL ARTIST / LIVE VISUALS / SOUND
             </p>
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-[0.95] uppercase">
-              Tech brutalism for
-              <span class="text-primary-400">human emotion</span>
+              {{ site.headline }}
             </h1>
             <p class="mt-6 text-lg text-zinc-300 max-w-2xl">
-              Creo piezas audiovisuales y experimentos visuales donde el error, el ritmo y la materia digital se convierten en lenguaje.
+              {{ site.bio }} Creo piezas audiovisuales y experimentos visuales donde el error y el ritmo se convierten en lenguaje.
             </p>
           </div>
 
@@ -65,10 +65,11 @@ const featuredWorks = works.slice(0, 3)
         </div>
 
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-          <article
+          <NuxtLink
             v-for="work in featuredWorks"
             :key="work.slug"
-            class="brutal-card bg-[var(--bg-1)] overflow-hidden"
+            :to="`/portfolio/${work.slug}`"
+            class="brutal-card bg-[var(--bg-1)] overflow-hidden transition-transform hover:-translate-y-1"
           >
             <img
               :src="work.image"
@@ -86,8 +87,11 @@ const featuredWorks = works.slice(0, 3)
               <p class="text-zinc-300">
                 {{ work.summary }}
               </p>
+              <p class="font-mono text-xs text-primary-400">
+                Ver detalle ->
+              </p>
             </div>
-          </article>
+          </NuxtLink>
         </div>
       </UContainer>
     </section>
