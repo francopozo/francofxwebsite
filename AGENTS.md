@@ -6,6 +6,8 @@
 - Primary deployment target is Banahosting shared hosting via static output.
 
 ## Source of truth
+- Always use the latest committed repository state (`HEAD`) as source of truth.
+- Do not assume uncommitted/staged working tree changes unless the user explicitly asks to use them.
 - Use executable config first: `package.json`, `nuxt.config.ts`, `.github/workflows/ci.yml`.
 - If prose conflicts with config/scripts, follow config/scripts.
 
