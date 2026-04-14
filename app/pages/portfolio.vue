@@ -39,10 +39,10 @@ import { works } from '~/data/works'
                 {{ work.year }}
               </UBadge>
             </div>
-            <p class="text-sm text-zinc-400">
+            <p class="text-sm text-[var(--text-3)]">
               {{ work.medium }}
             </p>
-            <p class="text-zinc-300">
+            <p class="text-[var(--text-1)]">
               {{ work.summary }}
             </p>
             <div class="flex flex-wrap gap-2">

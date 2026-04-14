@@ -1,12 +1,15 @@
 export const site = {
-  artistName: 'Franco Pozo',
+  artistName: 'FrancoFX',
+  artistDisplayName: 'Franco Pozo / FrancoFX',
   brand: 'FRANCO//LAB',
-  location: 'Chile',
-  headline: 'Tech brutalism for human emotion',
-  bio: 'Artista audiovisual enfocado en cruces entre imagen, sonido y codigo.',
+  location: 'Bolivia',
+  headline: 'Franco Pozo / FrancoFX',
   contactEmail: 'contacto@francopozo.art',
   socials: [
-    { label: 'Instagram', href: 'https://instagram.com/francopozo.art' },
-    { label: 'GitHub', href: 'https://github.com/francopozo' }
+    { label: 'Instagram', href: 'https://instagram.com/francofx_visuals' },
+    { label: 'ArtStation', href: 'https://artstation.com/francofx' },
+    { label: 'Facebook', href: 'https://facebook.com/francofx.visuals' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/francofx' },
+    { label: 'X / Twitter', href: 'https://twitter.com/FrancoPozo' }
   ]
 }

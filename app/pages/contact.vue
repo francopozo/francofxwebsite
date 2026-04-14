@@ -21,7 +21,7 @@ function onSubmit() {
         CONTACT
       </p>
       <h1 class="text-4xl md:text-5xl font-bold uppercase mb-8">
-        Let's build something intense
+        Hablemos de tu proyecto
       </h1>
 
       <div class="grid lg:grid-cols-12 gap-8">
@@ -81,16 +81,27 @@ function onSubmit() {
         </div>
 
         <aside class="lg:col-span-5 brutal-card bg-[var(--bg-1)] p-6 md:p-8 space-y-4">
-          <p class="font-mono text-xs text-zinc-400">
+          <p class="font-mono text-xs text-[var(--text-3)]">
             DIRECT
           </p>
-          <p class="text-zinc-300">
-            Puedes escribirme para comisiones, colaboraciones o exhibiciones.
+          <p class="text-[var(--text-1)]">
+            Puedes escribirme para colaboraciones, propuestas comerciales o proyectos artisticos.
           </p>
-          <ul class="space-y-2 text-zinc-200">
+          <ul class="space-y-2 text-[var(--text-1)] text-sm">
             <li>Email: {{ site.contactEmail }}</li>
-            <li>Instagram: @francopozo.art</li>
-            <li>GitHub: github.com/francopozo</li>
+            <li
+              v-for="social in site.socials"
+              :key="social.href"
+            >
+              <a
+                :href="social.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline decoration-[var(--line-strong)] underline-offset-2 hover:text-primary-300"
+              >
+                {{ social.label }}
+              </a>
+            </li>
           </ul>
           <UButton
             :to="`mailto:${site.contactEmail}`"

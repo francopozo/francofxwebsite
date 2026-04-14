@@ -48,14 +48,14 @@ useSeoMeta({
             <h1 class="text-3xl md:text-5xl font-bold uppercase mb-5">
               {{ work?.title }}
             </h1>
-            <p class="text-zinc-200 leading-relaxed text-lg">
+            <p class="text-[var(--text-1)] leading-relaxed text-lg">
               {{ work?.longDescription }}
             </p>
           </div>
         </div>
 
         <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-6 space-y-4 h-fit">
-          <p class="font-mono text-xs text-zinc-400">
+          <p class="font-mono text-xs text-[var(--text-3)]">
             TAGS
           </p>
 
@@ -72,7 +72,7 @@ useSeoMeta({
 
           <USeparator />
 
-          <p class="text-sm text-zinc-300">
+          <p class="text-sm text-[var(--text-1)]">
             Si quieres esta pieza en una muestra, colaboracion o version expandida, escribeme desde la seccion de contacto.
           </p>
           <UButton
