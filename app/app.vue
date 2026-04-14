@@ -58,7 +58,7 @@ watch(
   <UApp>
     <div class="min-h-dvh">
       <header class="sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--surface-overlay)] backdrop-blur">
-        <UContainer class="flex items-center justify-between gap-4 py-3 md:py-4">
+        <UContainer class="flex items-center justify-between gap-4 py-4 md:py-5">
           <NuxtLink
             to="/"
             class="inline-flex shrink-0 items-center"
@@ -101,7 +101,7 @@ watch(
           id="mobile-nav"
           class="absolute left-0 right-0 top-full z-50 border-y border-[var(--line)] bg-[var(--surface-overlay-strong)] backdrop-blur md:hidden"
         >
-          <UContainer class="py-3">
+          <UContainer class="py-4">
             <nav class="flex flex-col gap-1">
               <UButton
                 v-for="item in nav"
@@ -123,8 +123,8 @@ watch(
         <NuxtPage />
       </UMain>
 
-      <footer class="section-wrap mt-16">
-        <UContainer class="py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <footer class="section-wrap mt-20 md:mt-24">
+        <UContainer class="py-10 md:py-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div class="inline-flex items-center gap-3">
             <img
               src="/francofx_logowhite.svg"

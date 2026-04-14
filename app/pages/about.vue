@@ -20,16 +20,16 @@ const services = [
 
 <template>
   <section class="section-wrap">
-    <UContainer class="py-12 md:py-16">
+    <UContainer class="py-14 md:py-20">
       <p class="font-mono text-xs tracking-widest text-primary-400 mb-3">
         ABOUT
       </p>
-      <h1 class="text-4xl md:text-5xl font-bold uppercase mb-8">
+      <h1 class="mb-10 text-4xl font-bold uppercase md:text-5xl">
         Perfil
       </h1>
 
-      <div class="grid lg:grid-cols-12 gap-8">
-        <div class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-6 md:p-8 space-y-4 text-[var(--text-1)] text-lg leading-relaxed">
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-7 md:p-10 space-y-5 text-[var(--text-1)] text-lg leading-relaxed">
           <p>
             Soy {{ site.artistName }}, disenador grafico y creador de contenido enfocado en comunicacion visual, motion graphics y produccion digital.
             Mi trabajo se situa entre el diseno y la exploracion artistica, combinando estructura, narrativa visual y experimentacion.
@@ -44,11 +44,11 @@ const services = [
           </p>
         </div>
 
-        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-6 space-y-3">
+        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-7 md:p-8 space-y-4">
           <p class="font-mono text-xs text-[var(--text-3)]">
             ENFOQUE
           </p>
-          <ul class="space-y-2 text-[var(--text-1)]">
+          <ul class="space-y-3 text-[var(--text-1)]">
             <li
               v-for="item in focusItems"
               :key="item"
@@ -62,12 +62,12 @@ const services = [
         </aside>
       </div>
 
-      <div class="mt-8 grid lg:grid-cols-2 gap-8">
-        <section class="brutal-card bg-[var(--bg-1)] p-6 md:p-8 space-y-4">
+      <div class="mt-10 grid gap-10 lg:grid-cols-2">
+        <section class="brutal-card bg-[var(--bg-1)] p-7 md:p-9 space-y-5">
           <p class="font-mono text-xs text-[var(--text-3)]">
             SERVICIOS
           </p>
-          <ul class="grid sm:grid-cols-2 gap-2 text-[var(--text-1)]">
+          <ul class="grid gap-3 text-[var(--text-1)] sm:grid-cols-2">
             <li
               v-for="service in services"
               :key="service"
@@ -77,7 +77,7 @@ const services = [
           </ul>
         </section>
 
-        <section class="brutal-card bg-[var(--bg-1)] p-6 md:p-8 space-y-4 text-[var(--text-1)]">
+        <section class="brutal-card bg-[var(--bg-1)] p-7 md:p-9 space-y-5 text-[var(--text-1)]">
           <p class="font-mono text-xs text-[var(--text-3)]">
             EXPERIENCIA
           </p>
@@ -94,8 +94,8 @@ const services = [
         </section>
       </div>
 
-      <div class="mt-8 grid lg:grid-cols-12 gap-8">
-        <section class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-6 md:p-8 space-y-4 text-[var(--text-1)]">
+      <div class="mt-10 grid gap-10 lg:grid-cols-12">
+        <section class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-7 md:p-9 space-y-5 text-[var(--text-1)]">
           <p class="font-mono text-xs text-[var(--text-3)]">
             DIRECCION ARTISTICA
           </p>
@@ -108,7 +108,7 @@ const services = [
           </p>
         </section>
 
-        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-6 space-y-3 text-[var(--text-1)]">
+        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-7 md:p-8 space-y-4 text-[var(--text-1)]">
           <p class="font-mono text-xs text-[var(--text-3)]">
             ACTUALIDAD
           </p>

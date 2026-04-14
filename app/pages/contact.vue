@@ -16,18 +16,18 @@ function onSubmit() {
 
 <template>
   <section class="section-wrap">
-    <UContainer class="py-12 md:py-16">
+    <UContainer class="py-14 md:py-20">
       <p class="font-mono text-xs tracking-widest text-primary-400 mb-3">
         CONTACT
       </p>
-      <h1 class="text-4xl md:text-5xl font-bold uppercase mb-8">
+      <h1 class="mb-10 text-4xl font-bold uppercase md:text-5xl">
         Hablemos de tu proyecto
       </h1>
 
-      <div class="grid lg:grid-cols-12 gap-8">
-        <div class="lg:col-span-7 brutal-card bg-[var(--bg-1)] p-6 md:p-8">
+      <div class="grid gap-10 lg:grid-cols-12">
+        <div class="lg:col-span-7 brutal-card bg-[var(--bg-1)] p-7 md:p-10">
           <form
-            class="space-y-5"
+            class="space-y-6"
             @submit.prevent="onSubmit"
           >
             <UFormField
@@ -64,7 +64,7 @@ function onSubmit() {
               />
             </UFormField>
 
-            <div class="flex items-center gap-3">
+            <div class="mt-1 flex items-center gap-4">
               <UButton
                 type="submit"
                 label="Enviar mensaje"
@@ -80,14 +80,14 @@ function onSubmit() {
           </form>
         </div>
 
-        <aside class="lg:col-span-5 brutal-card bg-[var(--bg-1)] p-6 md:p-8 space-y-4">
+        <aside class="lg:col-span-5 brutal-card bg-[var(--bg-1)] p-7 md:p-10 space-y-5">
           <p class="font-mono text-xs text-[var(--text-3)]">
             DIRECT
           </p>
           <p class="text-[var(--text-1)]">
             Puedes escribirme para colaboraciones, propuestas comerciales o proyectos artisticos.
           </p>
-          <ul class="space-y-2 text-[var(--text-1)] text-sm">
+          <ul class="space-y-3 text-[var(--text-1)] text-sm">
             <li>Email: {{ site.contactEmail }}</li>
             <li
               v-for="social in site.socials"

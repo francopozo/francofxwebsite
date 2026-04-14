@@ -19,8 +19,8 @@ const featuredWorks = works.slice(0, 3)
       <div class="absolute inset-0 bg-gradient-to-t from-[rgba(6,7,8,0.88)] via-[rgba(6,7,8,0.52)] to-[rgba(6,7,8,0.14)]" />
 
       <div class="relative z-10 flex min-h-[64vh] items-end md:min-h-[76vh]">
-        <UContainer class="w-full pb-8 md:pb-12 lg:pb-14">
-          <p class="mb-4 font-mono text-xs tracking-[0.18em] text-primary-400">
+        <UContainer class="w-full pb-10 md:pb-14 lg:pb-16">
+          <p class="mb-5 font-mono text-xs tracking-[0.18em] text-primary-400">
             GRAPHIC & MOTION DESIGNER / VISUAL ARTIST
           </p>
 
@@ -28,11 +28,11 @@ const featuredWorks = works.slice(0, 3)
             {{ site.headline }}
           </h1>
 
-          <p class="mt-5 max-w-2xl text-base text-[var(--text-1)] md:text-lg">
+          <p class="mt-7 max-w-2xl text-base text-[var(--text-1)] md:text-lg">
             Puedo crear tu siguiente experiencia visuals.
           </p>
 
-          <div class="mt-6 flex flex-wrap gap-3">
+          <div class="mt-8 flex flex-wrap gap-4">
             <UButton
               to="/portfolio"
               label="Ver obras"
@@ -50,18 +50,18 @@ const featuredWorks = works.slice(0, 3)
     </section>
 
     <section class="section-wrap">
-      <UContainer class="py-8 md:py-10">
-        <div class="brutal-card bg-[var(--bg-1)] p-5 md:p-6">
-          <div class="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+      <UContainer class="py-10 md:py-12">
+        <div class="brutal-card bg-[var(--bg-1)] p-6 md:p-7">
+          <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div>
-              <p class="mb-2 font-mono text-xs text-[var(--text-3)]">
+              <p class="mb-3 font-mono text-xs text-[var(--text-3)]">
                 STATUS
               </p>
               <p class="text-lg font-semibold md:text-xl">
                 Abierto a colaboraciones y residencias 2026
               </p>
             </div>
-            <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-[var(--text-2)]">
+            <div class="flex flex-wrap items-center gap-3 font-mono text-xs text-[var(--text-2)]">
               <span>{{ site.location }}</span>
               <span class="text-[var(--line-strong)]">//</span>
               <span>Diseno</span>
@@ -76,8 +76,8 @@ const featuredWorks = works.slice(0, 3)
     </section>
 
     <section class="section-wrap">
-      <UContainer class="py-14 md:py-16">
-        <div class="flex items-center justify-between gap-4 mb-8">
+      <UContainer class="py-16 md:py-20">
+        <div class="mb-10 flex items-center justify-between gap-4">
           <h2 class="text-2xl md:text-3xl font-bold uppercase">
             Obras destacadas
           </h2>
@@ -90,7 +90,7 @@ const featuredWorks = works.slice(0, 3)
           />
         </div>
 
-        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           <NuxtLink
             v-for="work in featuredWorks"
             :key="work.slug"
@@ -103,7 +103,7 @@ const featuredWorks = works.slice(0, 3)
               class="h-56 w-full object-cover"
               loading="lazy"
             >
-            <div class="p-5 space-y-3">
+            <div class="space-y-4 p-6">
               <p class="font-mono text-xs text-[var(--text-3)]">
                 {{ work.year }} - {{ work.medium }}
               </p>
