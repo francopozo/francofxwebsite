@@ -19,36 +19,35 @@
 }
 
 :root {
-  --bg-0: #060708;
-  --bg-1: #0d0f11;
-  --bg-2: #171b20;
-  --bg-3: #1f252c;
-  --line: #2a3138;
-  --line-strong: #39424c;
-  --text-0: #f4f7fa;
-  --text-1: #d7dde4;
-  --text-2: #aeb8c2;
-  --text-3: #8693a0;
-  --surface-overlay: rgba(6, 7, 8, 0.92);
-  --surface-overlay-strong: rgba(6, 7, 8, 0.96);
+  --bg-0: #030303;
+  --bg-1: #090909;
+  --bg-2: #111111;
+  --bg-3: #171717;
+  --line: rgba(255, 255, 255, 0.06);
+  --line-strong: rgba(255, 255, 255, 0.12);
+  --text-0: #ffffff;
+  --text-1: #f2f2f2;
+  --text-2: #d0d0d0;
+  --text-3: #a9a9a9;
+  --surface-overlay: rgba(3, 3, 3, 0.88);
+  --surface-overlay-strong: rgba(3, 3, 3, 0.95);
 }
 
 body {
   background:
-    radial-gradient(circle at 12% -12%, rgba(254, 37, 39, 0.2), transparent 38%),
-    radial-gradient(circle at 88% 8%, rgba(71, 88, 104, 0.2), transparent 34%),
-    linear-gradient(180deg, rgba(31, 37, 44, 0.26), transparent 40%),
+    radial-gradient(circle at 14% -16%, rgba(254, 37, 39, 0.24), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 48%),
     var(--bg-0);
   color: var(--text-0);
 }
 
 .brutal-card {
-  border: 1px solid var(--line-strong);
-  background: linear-gradient(180deg, rgba(23, 27, 32, 0.9), rgba(13, 15, 17, 0.94));
-  box-shadow: 7px 7px 0 #000;
+  border: 1px solid var(--line);
+  background: rgba(10, 10, 10, 0.8);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
 }
 
 .section-wrap {
   border-top: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 55%);
+  background: none;
 }

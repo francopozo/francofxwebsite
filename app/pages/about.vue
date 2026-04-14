@@ -20,16 +20,16 @@ const services = [
 
 <template>
   <section class="section-wrap">
-    <UContainer class="py-14 md:py-20">
+    <UContainer class="py-16 md:py-24">
       <p class="font-mono text-xs tracking-widest text-primary-400 mb-3">
         ABOUT
       </p>
-      <h1 class="mb-10 text-4xl font-bold uppercase md:text-5xl">
+      <h1 class="mb-12 text-4xl font-bold uppercase md:text-5xl">
         Perfil
       </h1>
 
-      <div class="grid gap-10 lg:grid-cols-12">
-        <div class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-7 md:p-10 space-y-5 text-[var(--text-1)] text-lg leading-relaxed">
+      <div class="grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-8 md:p-12 space-y-6 text-[var(--text-1)] text-lg leading-relaxed">
           <p>
             Soy {{ site.artistName }}, disenador grafico y creador de contenido enfocado en comunicacion visual, motion graphics y produccion digital.
             Mi trabajo se situa entre el diseno y la exploracion artistica, combinando estructura, narrativa visual y experimentacion.
@@ -44,7 +44,7 @@ const services = [
           </p>
         </div>
 
-        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-7 md:p-8 space-y-4">
+        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-8 md:p-10 space-y-5">
           <p class="font-mono text-xs text-[var(--text-3)]">
             ENFOQUE
           </p>
@@ -62,8 +62,8 @@ const services = [
         </aside>
       </div>
 
-      <div class="mt-10 grid gap-10 lg:grid-cols-2">
-        <section class="brutal-card bg-[var(--bg-1)] p-7 md:p-9 space-y-5">
+      <div class="mt-12 grid gap-12 lg:grid-cols-2">
+        <section class="brutal-card bg-[var(--bg-1)] p-8 md:p-10 space-y-6">
           <p class="font-mono text-xs text-[var(--text-3)]">
             SERVICIOS
           </p>
@@ -77,7 +77,7 @@ const services = [
           </ul>
         </section>
 
-        <section class="brutal-card bg-[var(--bg-1)] p-7 md:p-9 space-y-5 text-[var(--text-1)]">
+        <section class="brutal-card bg-[var(--bg-1)] p-8 md:p-10 space-y-6 text-[var(--text-1)]">
           <p class="font-mono text-xs text-[var(--text-3)]">
             EXPERIENCIA
           </p>
@@ -94,8 +94,8 @@ const services = [
         </section>
       </div>
 
-      <div class="mt-10 grid gap-10 lg:grid-cols-12">
-        <section class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-7 md:p-9 space-y-5 text-[var(--text-1)]">
+      <div class="mt-12 grid gap-12 lg:grid-cols-12">
+        <section class="lg:col-span-8 brutal-card bg-[var(--bg-1)] p-8 md:p-10 space-y-6 text-[var(--text-1)]">
           <p class="font-mono text-xs text-[var(--text-3)]">
             DIRECCION ARTISTICA
           </p>
@@ -108,7 +108,7 @@ const services = [
           </p>
         </section>
 
-        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-7 md:p-8 space-y-4 text-[var(--text-1)]">
+        <aside class="lg:col-span-4 brutal-card bg-[var(--bg-1)] p-8 md:p-10 space-y-5 text-[var(--text-1)]">
           <p class="font-mono text-xs text-[var(--text-3)]">
             ACTUALIDAD
           </p>

@@ -16,18 +16,18 @@ function onSubmit() {
 
 <template>
   <section class="section-wrap">
-    <UContainer class="py-14 md:py-20">
+    <UContainer class="py-16 md:py-24">
       <p class="font-mono text-xs tracking-widest text-primary-400 mb-3">
         CONTACT
       </p>
-      <h1 class="mb-10 text-4xl font-bold uppercase md:text-5xl">
+      <h1 class="mb-12 text-4xl font-bold uppercase md:text-5xl">
         Hablemos de tu proyecto
       </h1>
 
-      <div class="grid gap-10 lg:grid-cols-12">
-        <div class="lg:col-span-7 brutal-card bg-[var(--bg-1)] p-7 md:p-10">
+      <div class="grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-7 brutal-card bg-[var(--bg-1)] p-8 md:p-12">
           <form
-            class="space-y-6"
+            class="space-y-7"
             @submit.prevent="onSubmit"
           >
             <UFormField
@@ -64,7 +64,7 @@ function onSubmit() {
               />
             </UFormField>
 
-            <div class="mt-1 flex items-center gap-4">
+            <div class="mt-2 flex items-center gap-5">
               <UButton
                 type="submit"
                 label="Enviar mensaje"
@@ -80,7 +80,7 @@ function onSubmit() {
           </form>
         </div>
 
-        <aside class="lg:col-span-5 brutal-card bg-[var(--bg-1)] p-7 md:p-10 space-y-5">
+        <aside class="lg:col-span-5 brutal-card bg-[var(--bg-1)] p-8 md:p-12 space-y-6">
           <p class="font-mono text-xs text-[var(--text-3)]">
             DIRECT
           </p>

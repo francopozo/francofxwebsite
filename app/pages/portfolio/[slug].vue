@@ -23,29 +23,29 @@ useSeoMeta({
 
 <template>
   <section class="section-wrap">
-    <UContainer class="py-14 md:py-20">
+    <UContainer class="py-16 md:py-24">
       <UButton
         to="/portfolio"
         label="Volver a portfolio"
         color="neutral"
         variant="ghost"
         icon="i-lucide-arrow-left"
-        class="mb-10"
+        class="mb-12"
       />
 
-      <div class="grid gap-10 lg:grid-cols-12">
-        <div class="space-y-8 lg:col-span-8">
+      <div class="grid gap-12 lg:grid-cols-12">
+        <div class="space-y-10 lg:col-span-8">
           <img
             :src="work?.image"
             :alt="work?.title"
             class="brutal-card h-[380px] md:h-[520px] w-full object-cover"
           >
 
-          <div class="brutal-card bg-[var(--bg-1)] p-7 md:p-10">
+          <div class="brutal-card bg-[var(--bg-1)] p-8 md:p-12">
             <p class="font-mono text-xs tracking-widest text-primary-400 mb-3">
               {{ work?.year }} / {{ work?.medium }}
             </p>
-            <h1 class="mb-6 text-3xl font-bold uppercase md:text-5xl">
+            <h1 class="mb-8 text-3xl font-bold uppercase md:text-5xl">
               {{ work?.title }}
             </h1>
             <p class="text-[var(--text-1)] leading-relaxed text-lg">
@@ -54,12 +54,12 @@ useSeoMeta({
           </div>
         </div>
 
-        <aside class="h-fit space-y-5 brutal-card bg-[var(--bg-1)] p-7 md:p-8 lg:col-span-4">
+        <aside class="h-fit space-y-6 brutal-card bg-[var(--bg-1)] p-8 md:p-10 lg:col-span-4">
           <p class="font-mono text-xs text-[var(--text-3)]">
             TAGS
           </p>
 
-          <div class="flex flex-wrap gap-3">
+          <div class="flex flex-wrap gap-4">
             <UBadge
               v-for="tag in work?.tags"
               :key="tag"
